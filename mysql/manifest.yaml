@@ -1,8 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
-namespace: expense
+
 metadata:
   name: mysql
+  namespace: expense
   labels:
     app: expense
     tier: db
