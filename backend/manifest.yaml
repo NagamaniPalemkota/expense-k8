@@ -1,3 +1,11 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+ name: backend-configmap
+ namespace: expense
+data: 
+  DB_HOST: mysql #mysql component service name
+---
 apiVersion: apps/v1
 kind: Deployment
 
@@ -27,6 +35,9 @@ spec:
       containers:
       - name: backend
         image: nagamanimuvva/backend:v1.0
+        envFrom:
+          configMapRef:
+            name: backend-configmap
 ---
 apiVersion: v1
 kind: Service
