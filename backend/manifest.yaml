@@ -4,7 +4,7 @@ metadata:
  name: backend-configmap
  namespace: expense
 data: 
-  DB_HOST: mysql #mysql component service name
+  DB_HOST: mysql-service #mysql component service name
 ---
 apiVersion: apps/v1
 kind: Deployment
