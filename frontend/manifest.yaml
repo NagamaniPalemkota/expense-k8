@@ -5,7 +5,7 @@ metadata:
  namespace: expense
 data: 
   nginx.conf: |  #pipe symbol is used to tell that more lines are given here
-#configmap details to tell frontend to connect to backend service
+
     user www-data;
     worker_processes 4;
     pid /var/run/nginx.pid;
