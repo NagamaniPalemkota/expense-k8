@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: debug
+  namespace: expense
+spec:
+  containers:
+  - name: debug
+    image: nagamanimuvva/debug:v1.0
+
+

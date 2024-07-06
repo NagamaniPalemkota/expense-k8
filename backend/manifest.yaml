@@ -5,6 +5,7 @@ metadata:
  namespace: expense
 data: 
   DB_HOST: mysql-service #mysql component service name
+#configmap details to tell backend to connect to mysql service
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -39,6 +40,7 @@ spec:
         - configMapRef:
             name: backend-configmap
 ---
+#creating backend service to connect to backend
 apiVersion: v1
 kind: Service
 metadata: 
