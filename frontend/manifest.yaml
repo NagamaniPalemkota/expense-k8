@@ -124,11 +124,11 @@ spec:
         image: nagamanimuvva/frontend:v1.0
         resources:
           requests:
-            cpu: "100m"
-            memory: "128Mi"
+            cpu: "5m"
+            memory: "15Mi"
           limits:
-            cpu: "150m"
-            memory: "256Mi"
+            cpu: "5m"
+            memory: "15Mi"
         volumeMounts:
         - name: nginx-conf
           mountPath: /etc/nginx/nginx.conf
