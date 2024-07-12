@@ -125,10 +125,10 @@ spec:
         resources:
           requests:
             cpu: "5m"
-            memory: "15Mi"
+            memory: "10Mi"
           limits:
             cpu: "5m"
-            memory: "15Mi"
+            memory: "10Mi"
         volumeMounts:
         - name: nginx-conf
           mountPath: /etc/nginx/nginx.conf
